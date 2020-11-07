@@ -11,11 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Winter Fashion" %></title>
+    <title>Winter Fashion</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <%= stylesheet_link_tag "app" %>
-    <%= javascript_include_tag  "app" %>
+    <link href="stylesheets/app.css" rel="stylesheet" />
+    <script src="javascripts/app.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
@@ -25,9 +25,37 @@
     <![endif]-->
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="index">
 
-    <%= yield %>
+    <div class="container">
+  <div class="logo">
+
+  </div>
+    <img src="images/logo.png" class="eb" alt="Logo" />
+    <div class="row" id="header">
+    <a href="#">New Arrivals</a>
+    <a href="#">Winter Sale</a>
+    <a href="#">Coats</a>
+    <a href="#">Gloves</a>
+    <a href="#">Scarves</a>
+    <a href="#">Pants</a>
+    <a href="#">Contact</a>
+    </div>
+      <div class="row">
+        <div class="col">
+          <div class="text">
+            <h2>Discover the Newest Trends</h2>
+            <p>A New Look at Winter Fashion</p>
+          </div>
+          <img src="images/winter1.jpg" class="men"  alt="img-1"/>
+        </div>
+                <div class="col">
+                    <img src="images/winter2.jpg" class="men" alt="img-2" />
+                    <a class="block" href="#" id="shop">Shop Now</a>
+                </div>
+            </div>
+        </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
